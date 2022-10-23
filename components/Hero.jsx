@@ -1,13 +1,16 @@
 import React from 'react'
+import Image from 'next/image'
+import HeroImg from '../public/assets/hero/hero.png';
 
-const Hero = ({ heading, message }) => {
+
+const Hero = ({ heading, message, button }) => {
   return (
     <div className='flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img'>
-      <div className='absolute top-0 left-0 right-0 bg-black/70 z-[2]'/>
-      <div className='p-5 text-secondary z-[2] mt-[-10rem] text-center'>
+      <div className='absolute top-0 left-0 right-0 z-[2]'/>
+      <div className='p-5 text-secondary z-[2] mt-[-10rem] bg-black/50 text-center'>
         <h2 className='text-5xl font-bold'>{heading}</h2>
         <p className='py-5 text-xl'>{message}</p>
-        <button className='px-8 py-2 border'>Book</button>
+        <button className='px-8 py-2 border border-grey'>{button}</button>
       </div>
     </div>
   )

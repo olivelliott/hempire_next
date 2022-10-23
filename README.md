@@ -2,7 +2,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description
-A MERN Stack web application that presents a rock and roll band based out of Boone, NC. It showcases upcoming shows, available merchandise, and a contact page to connect with the band for booking.
+A Next.js web application that presents a rock and roll band based out of Boone, NC. It showcases upcoming shows, available merchandise, and a contact page to connect with the band for booking.
 
 ## Table of Contents
 - [User Story](#user-story)

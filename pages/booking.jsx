@@ -4,8 +4,8 @@ import Hero from '../components/Hero'
 
 const booking = () => {
   return (
-    <div>
-      <Hero heading="Contact Us" message="Get in touch to book with us!" />
+    <div className='bg-primary'>
+      <Hero heading="Contact Us" button='Book'/>
       <Contact />
     </div>
   );
