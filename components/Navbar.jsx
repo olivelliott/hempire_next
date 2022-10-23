@@ -14,8 +14,8 @@ const Navbar = () => {
   useEffect(() => {
     const changeColor = () => {
       if (window.scrollY >= 90) {
-        setColor("#fff");
-        setTextColor("#000000");
+        setColor("#0E1111");
+        setTextColor("#ff7400");
       } else {
         setColor("transparent");
         setTextColor("white");
@@ -38,6 +38,9 @@ const Navbar = () => {
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
           <li className="p-4">
             <Link href="/#gallery">Gallery</Link>
+          </li>
+          <li className="p-4">
+            <Link href="/booking">Booking</Link>
           </li>
           <li className="p-4">
             <Link href="/merch">Merch</Link>
@@ -68,16 +71,19 @@ const Navbar = () => {
           }
         >
           <ul>
-            <li className="p-4 text-4xl hover:text-gray-500">
-              <Link href="/#booking">Booking</Link>
+            <li  onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
+              <Link href="/#gallery">Gallery</Link>
             </li>
-            <li className="p-4 text-4xl hover:text-gray-500">
+            <li  onClick={handleNav}className="p-4 text-4xl hover:text-gray-500">
+              <Link href="/booking">Booking</Link>
+            </li>
+            <li onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
               <Link href="/merch">Merch</Link>
             </li>
-            <li className="p-4 text-4xl hover:text-gray-500">
+            <li  onClick={handleNav}className="p-4 text-4xl hover:text-gray-500">
               <Link href="/shows">Shows</Link>
             </li>
-            <li className="p-4 text-4xl hover:text-gray-500">
+            <li onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
               <Link href="/about">About</Link>
             </li>
           </ul>
