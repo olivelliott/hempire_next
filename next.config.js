@@ -4,10 +4,13 @@ const nextConfig = {
   swcMinify: true,
 }
 
-module.exports = {
+const withImages = require('next-images')
+
+module.exports = withImages({
   images: {
     domains: [
       'images.unsplash.com',
-    ]
+    ],
+    disableStaticImages: true
   }
-}
+})

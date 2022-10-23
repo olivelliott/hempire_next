@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Hero from '../components/Hero';
+import Instagram from '../components/Instagram'
+import Instagram_Img from '../components/Instagram_Img';
 import Slider from '../components/Slider'
 import { SliderData } from '../components/SliderData'
  
@@ -14,6 +16,7 @@ export default function Home() {
       </Head>
       <Hero heading='Hempire' message='A rock and roll band based out of Boone, NC.'/>
       <Slider slides={SliderData} />
+      <Instagram />
     </div>
   )
 }
