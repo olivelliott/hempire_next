@@ -1,6 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
-import HeroImg from '../public/assets/hero/hero.png';
+import Image from "next/legacy/image";
 
 
 const Hero = ({ heading, message, button }) => {

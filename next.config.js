@@ -12,5 +12,8 @@ module.exports = withImages({
       'images.unsplash.com',
     ],
     disableStaticImages: true
-  }
+    
+  },
+  experimental:{appDir: true}
+  
 })

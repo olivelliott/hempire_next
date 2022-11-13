@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Image from "next/legacy/image";
 import Hero from '../components/Hero';
 import Instagram from '../components/Instagram'
 import Instagram_Img from '../components/Instagram_Img';
