@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/font": "^13.0.3",
     "daisyui": "^2.33.0",
     "next": "^13.0.2",
     "next-images": "^1.8.4",
