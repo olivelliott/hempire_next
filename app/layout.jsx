@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from '../components/Navbar'
+import Head from './head'
 
 export default function RootLayout({ children }) {
   return (
@@ -8,7 +9,8 @@ export default function RootLayout({ children }) {
         <head /> will contain the components returned by the nearest parent
         head.jsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
-      <head />
+      {/* <head /> */}
+      <Head />
       <body>
         <header>
           <Navbar />
