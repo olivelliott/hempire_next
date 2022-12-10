@@ -58,9 +58,9 @@ const Navbar = () => {
         {/* Mobile Button */}
         <div onClick={handleNav} className="block sm:hidden z-10">
           {nav ? (
-            <AiOutlineClose size={20} style={{ color: `${textColor}` }} />
+            <AiOutlineClose size={20} className='white' />
           ) : (
-            <AiOutlineMenu size={20} style={{ color: `${textColor}` }} />
+            <AiOutlineMenu size={20} className='white' />
           )}
         </div>
 
@@ -73,19 +73,19 @@ const Navbar = () => {
           }
         >
           <ul>
-            <li  onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
+            <li  onClick={handleNav} className="p-4 uppercase text-2xl hover:text-secondary">
               <Link href="/#gallery">Gallery</Link>
             </li>
-            <li  onClick={handleNav}className="p-4 text-4xl hover:text-gray-500">
+            <li  onClick={handleNav}className="p-4 uppercase text-2xl hover:text-secondary">
               <Link href="/booking">Booking</Link>
             </li>
-            <li onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
+            <li onClick={handleNav} className="p-4 uppercase text-2xl hover:text-secondary">
               <Link href="/merch">Merch</Link>
             </li>
-            <li  onClick={handleNav}className="p-4 text-4xl hover:text-gray-500">
+            <li  onClick={handleNav}className="p-4 uppercase text-2xl hover:text-secondary">
               <Link href="/shows">Shows</Link>
             </li>
-            <li onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
+            <li onClick={handleNav} className="p-4 uppercase text-2xl hover:text-secondary">
               <Link href="/about">About</Link>
             </li>
           </ul>
