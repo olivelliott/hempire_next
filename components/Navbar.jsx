@@ -34,15 +34,15 @@ const Navbar = () => {
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
         <Link href="/">
           <h1 style={{ color: `${textColor}` }} className="font-bold text-4xl">
-            Hempire
+            icon
           </h1>
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
+          {/* <li className="p-4">
+            <Link href="/#gallery">Home</Link>
+          </li> */}
           <li className="p-4">
-            <Link href="/#gallery">Gallery</Link>
-          </li>
-          <li className="p-4">
-            <Link href="/booking">Booking</Link>
+            <Link href="/#contact">Contact</Link>
           </li>
           <li className="p-4">
             <Link href="/merch">Merch</Link>
@@ -74,7 +74,7 @@ const Navbar = () => {
         >
           <ul>
             <li  onClick={handleNav} className="p-4 uppercase text-2xl hover:text-secondary">
-              <Link href="/#gallery">Gallery</Link>
+              <Link href="/#gallery">Home</Link>
             </li>
             <li  onClick={handleNav}className="p-4 uppercase text-2xl hover:text-secondary">
               <Link href="/booking">Booking</Link>
