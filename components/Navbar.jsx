@@ -39,13 +39,13 @@ const Navbar = () => {
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
           <li className="p-4">
-            <Link href="/#gallery">Home</Link>
+            <a href="#home">Home</a>
           </li>
           <li className="p-4">
-            <Link href="/#shows">Shows</Link>
+            <a href="#shows">Shows</a>
           </li>
           <li className="p-4">
-            <Link href="/#contact">Contact</Link>
+            <a href="#contact">Contact</a>
           </li>
           <li className="p-4">
             <Link href="/merch">Merch</Link>
@@ -70,22 +70,19 @@ const Navbar = () => {
           }
         > 
           <ul>
-            {/* <li  onClick={handleNav} className="p-4 uppercase text-2xl hover:text-secondary">
-              <Link href="/#gallery">Home</Link>
-            </li> */}
-            <li  onClick={handleNav}className="p-4 uppercase text-2xl hover:text-secondary">
-              <Link href="#contact">Contact</Link>
+            <li  onClick={handleNav} className="p-4 uppercase text-2xl hover:text-secondary">
+              <a href="#home">Home</a>
+            </li>
+            <li onClick={handleNav} className="p-4 uppercase text-2xl hover:text-secondary">
+              <a href="#shows">Shows</a>
+            </li>
+
+            <li onClick={handleNav} className="p-4 uppercase text-2xl hover:text-secondary">
+              <a href="#contact">Contact</a>
             </li>
             <li onClick={handleNav} className="p-4 uppercase text-2xl hover:text-secondary">
               <Link href="/merch">Merch</Link>
             </li>
-            <li  onClick={handleNav}className="p-4 uppercase text-2xl hover:text-secondary">
-              <Link href="/shows">Shows</Link>
-            </li>
-            <li onClick={handleNav} className="p-4 uppercase text-2xl hover:text-secondary">
-              <Link href="/about">About</Link>
-            </li>
-            {/* ! Use an <a> */}
           </ul>
         </div>
       </div>
