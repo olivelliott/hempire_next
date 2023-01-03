@@ -8,7 +8,7 @@ import { FaFacebookSquare, FaBandcamp } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div id="contact" className="max-w-[1240px] m-auto p-4 mb-0">
+    <div id="contact" className="max-w-[1240px] m-auto p-4 mb-0 lg:h-[100vh] grid content-center">
       <div className="relative">
         <Image
           className="max-h-[50vh]"
@@ -20,7 +20,7 @@ const Contact = () => {
         />
 
         <div className="absolute inset-0 p-4 text-center my-18 md:my-32 lg:my-20">
-          <h1 className="sm:text-5xl md:text-6xl lg:text-6xl font-bold text-center p-4 text-white uppercase">
+          <h1 className="sm:text-5xl md:text-6xl lg:text-6xl font-sans font-bold text-center p-4 text-white uppercase">
             connect with us
           </h1>
           <div className="flex justify-around mt-4 pb-4">
@@ -41,10 +41,10 @@ const Contact = () => {
               className="relative ease-in duration-300 hover:-translate-y-1 hover:scale-110 text-secondary"
             />
           </div>
-          <p className="text-xl lg:text-3xl mt-4 font-bold uppercase text-white">or</p>
+          <p className="text-xl lg:text-3xl mt-4 font-bold uppercase text-white font-sans">or</p>
           <a
             href="mailto:jkshaw13@gmail.com"
-            className="btn btn-sm md:btn-md lg:btn-md border-none relative ease-in duration-300 mt-4 text-sm rounded bg-neutral active:bg-gray-800 text-white text-center active:text-gray-200"
+            className=" font-sans btn btn-sm md:btn-md lg:btn-md border-none relative ease-in duration-300 mt-4 text-sm rounded bg-neutral active:bg-gray-800 text-white text-center active:text-gray-200"
           >
             send an email
           </a>
