@@ -2,7 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { GiGrimReaper } from 'react-icons/gi'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -33,25 +35,20 @@ const Navbar = () => {
     >
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
         <Link href="/">
-          <h1 style={{ color: `${textColor}` }} className="font-bold text-4xl">
-            icon
-          </h1>
+          <GiGrimReaper size={30}  />
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
-          {/* <li className="p-4">
+          <li className="p-4">
             <Link href="/#gallery">Home</Link>
-          </li> */}
+          </li>
+          <li className="p-4">
+            <Link href="/#shows">Shows</Link>
+          </li>
           <li className="p-4">
             <Link href="/#contact">Contact</Link>
           </li>
           <li className="p-4">
             <Link href="/merch">Merch</Link>
-          </li>
-          <li className="p-4">
-            <Link href="/shows">Shows</Link>
-          </li>
-          <li className="p-4">
-            <Link href="/about">About</Link>
           </li>
         </ul>
 
@@ -71,13 +68,13 @@ const Navbar = () => {
               ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
               : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
           }
-        >
+        > 
           <ul>
-            <li  onClick={handleNav} className="p-4 uppercase text-2xl hover:text-secondary">
+            {/* <li  onClick={handleNav} className="p-4 uppercase text-2xl hover:text-secondary">
               <Link href="/#gallery">Home</Link>
-            </li>
+            </li> */}
             <li  onClick={handleNav}className="p-4 uppercase text-2xl hover:text-secondary">
-              <Link href="/booking">Booking</Link>
+              <Link href="#contact">Contact</Link>
             </li>
             <li onClick={handleNav} className="p-4 uppercase text-2xl hover:text-secondary">
               <Link href="/merch">Merch</Link>
@@ -88,6 +85,7 @@ const Navbar = () => {
             <li onClick={handleNav} className="p-4 uppercase text-2xl hover:text-secondary">
               <Link href="/about">About</Link>
             </li>
+            {/* ! Use an <a> */}
           </ul>
         </div>
       </div>
