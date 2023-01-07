@@ -2,9 +2,12 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from 'next/image';
 
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { GiGrimReaper } from 'react-icons/gi'
+import { GiGrimReaper } from 'react-icons/gi';
+
+import IconLogo from '../public/assets/icons/hempire_logo.png'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -35,7 +38,8 @@ const Navbar = () => {
     >
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
         <Link href="/">
-          <GiGrimReaper size={30}  />
+          {/* <GiGrimReaper size={30}  /> */}
+          {/* <Image src={IconLogo} alt='hempire icon' width={50} height={5}/> */}
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
           <li className="p-4 font-sans">

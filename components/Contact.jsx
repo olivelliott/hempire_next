@@ -20,7 +20,7 @@ const Contact = () => {
         />
 
         <div className="absolute inset-0 p-4 text-center my-18 md:my-32 lg:my-20">
-          <h1 className="sm:text-5xl md:text-6xl lg:text-6xl font-sans font-bold text-center p-4 text-white uppercase">
+          <h1 className="text-4xl md:text-6xl lg:text-6xl font-sans font-bold text-center p-4 text-white uppercase">
             connect with us
           </h1>
           <div className="flex justify-around mt-4 pb-4">
