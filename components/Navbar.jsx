@@ -48,7 +48,7 @@ const Navbar = () => {
             <a href="#contact">Contact</a>
           </li>
           <li className="p-4 font-sans">
-            <Link href="/merch">Merch</Link>
+            <a href="#merch">Merch</a>
           </li>
         </ul>
 
@@ -81,7 +81,7 @@ const Navbar = () => {
               <a href="#contact">Contact</a>
             </li>
             <li onClick={handleNav} className="p-4 uppercase text-2xl hover:text-secondary font-sans">
-              <Link href="/merch">Merch</Link>
+              <a href="#merch">Merch</a>
             </li>
           </ul>
         </div>

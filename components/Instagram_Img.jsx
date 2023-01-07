@@ -5,6 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 const Instagram_Img = ({ socialImg }) => {
   return (
     <div className="relative">
+      <a href='https://www.instagram.com/hempirerocks' target='_blank'>
       <Image
         src={socialImg}
         alt="/"
@@ -19,6 +20,7 @@ const Instagram_Img = ({ socialImg }) => {
           <FaInstagram size={30} />
         </p>
       </div>
+      </a>
     </div>
   );
 };

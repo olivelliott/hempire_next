@@ -38,8 +38,8 @@ const products = [
 
 const merch = () => {
   return (
-    <div className="bg-primary">
-      <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 h-[100vh]">
+    <div className="bg-primary" id='merch'>
+      <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 lg:h-[100vh]">
         <h1 className="font-sans font-bold uppercase text-white sm:text-5xl md:text-6xl lg:text-6xl text-center">merch</h1>
 
         <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 mt-8">
@@ -52,8 +52,8 @@ const merch = () => {
                   className="h-full w-full object-cover object-center group-hover:opacity-75"
                 />
               </div>
-              <h3 className="mt-4 text-sm text-white">{product.name}</h3>
-              <p className="mt-1 text-lg font-medium text-secondary">{product.price}</p>
+              <h3 className="mt-4 text-sm text-white font-sans">{product.name}</h3>
+              <p className="mt-1 text-lg font-medium text-secondary font-sans">{product.price}</p>
             </a>
           ))}
         </div>
