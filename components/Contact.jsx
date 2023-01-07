@@ -24,22 +24,28 @@ const Contact = () => {
             connect with us
           </h1>
           <div className="flex justify-around mt-4 pb-4">
-            <AiOutlineInstagram
-              size={33}
-              className="relative ease-in duration-300 hover:-translate-y-1 hover:scale-110 text-secondary"
-              width={35}
-              height={35}
-            />
-            <FaFacebookSquare
-              size={31}
-              className="relative ease-in duration-300 hover:-translate-y-1 hover:scale-110 text-secondary"
-              width={35}
-              height={35}
-            />
-            <FaBandcamp
-              size={30}
-              className="relative ease-in duration-300 hover:-translate-y-1 hover:scale-110 text-secondary"
-            />
+            <a href='https://www.instagram.com/hempirerocks/' target='_blank'>
+              <AiOutlineInstagram
+                size={33}
+                className="relative ease-in duration-300 hover:-translate-y-1 hover:scale-110 text-secondary"
+                width={35}
+                height={35}
+              />
+            </a>
+            <a href='https://www.facebook.com/hempirerocks/' target='_blank'>
+              <FaFacebookSquare
+                size={31}
+                className="relative ease-in duration-300 hover:-translate-y-1 hover:scale-110 text-secondary"
+                width={35}
+                height={35}
+              />
+            </a>
+            <a href='https://hempirerocks.bandcamp.com/' target='_blank'>
+              <FaBandcamp
+                size={30}
+                className="relative ease-in duration-300 hover:-translate-y-1 hover:scale-110 text-secondary"
+              />
+            </a>
           </div>
           <p className="text-xl lg:text-3xl mt-4 font-bold uppercase text-white font-sans">or</p>
           <a
