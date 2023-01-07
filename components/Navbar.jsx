@@ -70,17 +70,17 @@ const Navbar = () => {
           }
         > 
           <ul>
-            <li  onClick={handleNav} className="p-4 uppercase text-2xl hover:text-secondary">
+            <li  onClick={handleNav} className="p-4 uppercase text-2xl hover:text-secondary font-sans">
               <a href="#home">Home</a>
             </li>
-            <li onClick={handleNav} className="p-4 uppercase text-2xl hover:text-secondary">
+            <li onClick={handleNav} className="p-4 uppercase text-2xl hover:text-secondary font-sans">
               <a href="#shows">Shows</a>
             </li>
 
-            <li onClick={handleNav} className="p-4 uppercase text-2xl hover:text-secondary">
+            <li onClick={handleNav} className="p-4 uppercase text-2xl hover:text-secondary font-sans">
               <a href="#contact">Contact</a>
             </li>
-            <li onClick={handleNav} className="p-4 uppercase text-2xl hover:text-secondary">
+            <li onClick={handleNav} className="p-4 uppercase text-2xl hover:text-secondary font-sans">
               <Link href="/merch">Merch</Link>
             </li>
           </ul>

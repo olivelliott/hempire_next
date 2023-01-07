@@ -11,6 +11,7 @@ import Instagram_Img from '../components/Instagram_Img';
 import Contact from '../components/Contact'
 import Slider from '../components/Slider'
 import Show from '../components/Show'
+import Merch from '../components/Merch'
 import { SliderData } from '../components/SliderData'
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       {/* <p className={`${oswald.variable}`}>@hempirerocks</p> */}
       <Show />
       <Contact />
+      <Merch />
       <Instagram />
       {/* <Slider slides={SliderData} /> */}
       </div>
