@@ -22,7 +22,7 @@ const Navbar = () => {
         setTextColor("#ff7400");
       } else {
         setColor("transparent");
-        setTextColor("#0E1111");
+        setTextColor("white");
       }
     };
     window.addEventListener("scroll", changeColor);
@@ -38,16 +38,16 @@ const Navbar = () => {
           <GiGrimReaper size={30}  />
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
-          <li className="p-4">
+          <li className="p-4 font-sans">
             <a href="#home">Home</a>
           </li>
-          <li className="p-4">
+          <li className="p-4 font-sans">
             <a href="#shows">Shows</a>
           </li>
-          <li className="p-4">
+          <li className="p-4 font-sans">
             <a href="#contact">Contact</a>
           </li>
-          <li className="p-4">
+          <li className="p-4 font-sans">
             <Link href="/merch">Merch</Link>
           </li>
         </ul>

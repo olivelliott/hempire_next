@@ -3,22 +3,18 @@ import Navbar from '../components/Navbar'
 import Head from './head'
 import Footer from '../components/Footer'
 
-import { Oswald } from '@next/font/google';
+import { Oswald, Birthstone } from '@next/font/google';
 
 // If loading a variable font, you don't need to specify the font weight
 const oswald = Oswald({
   variable: '--font-oswald',
 });
 
-// export default function RootLayout({ children }: {
-//   children: React.ReactNode;
-// }) {
-//   return (
-//     <html lang="en" className={inter.className}>
-//       <body>{children}</body>
-//     </html>
-//   );
-// }
+const birthstone = Birthstone({
+  variable: '--font-birthstone',
+  weight: '400'
+})
+
 
 export default function RootLayout({ children }) {
   return (
@@ -29,12 +25,10 @@ export default function RootLayout({ children }) {
       */}
       {/* <head /> */}
       <Head />
-      <body>
         <header>
           <Navbar />
         </header>
         <body>{children}</body>
-      </body>
       <footer>
         <Footer/>
       </footer>

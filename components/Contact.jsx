@@ -16,7 +16,7 @@ const Contact = () => {
           src={ContactBg}
           width={0}
           height={0}
-          layout="responsive"
+          layout='responsive'
         />
 
         <div className="absolute inset-0 p-4 text-center my-18 md:my-32 lg:my-20">

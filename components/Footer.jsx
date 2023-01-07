@@ -13,7 +13,7 @@ const Footer = () => {
           ))}
         </div> */}
         <div className="mt-8 md:order-1 md:mt-0">
-          <p className="text-center text-base text-white">&copy; 2023 Olive | All rights reserved.</p>
+          <p className="text-center text-base text-white font-sans">&copy; 2023 Olive | All rights reserved.</p>
         </div>
       </div>
     </footer>
