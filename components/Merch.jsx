@@ -158,10 +158,10 @@ const Merch = () => {
                   </div>
                 </div>
               </div>
-              <h3 className="mt-4 text-5xl text-white font-sans">
+              <h3 className="mt-4 text-5xl lg:text-2xl text-white font-sans">
                 {product.name}
               </h3>
-              <p className="mt-3 text-4xl font-medium text-secondary font-sans">
+              <p className="mt-3 text-4xl lg:text-xl lg:mt-0 font-medium text-secondary font-sans">
                 {product.price}
               </p>
             </a>

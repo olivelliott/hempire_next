@@ -56,11 +56,11 @@ const shows = [
 export default function Show() {
   return (
     <div className="mx-auto mt-6 py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 lg:h-[100vh] lg:grid lg:content-center" id="shows">
-      <h1 className="text-center text-white font-bold text-8xl lg:text-8xl uppercase font-sans">
+      <h1 className="text-center text-white font-bold text-8xl lg:text-[8rem] uppercase font-sans">
         upcoming shows
       </h1>
 
-      <div className="mt-14 max-w-3xl mx-auto grid content-center grid-cols-1 gap-y-12 sm:grid-cols-1 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
+      <div className="mt-14 max-w-8xl mx-auto grid content-center grid-cols-1 gap-y-12 sm:grid-cols-1 sm:gap-x-6 md:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
         {shows.map((show) => (
           <div key={show.id}>
             <a href={show.href} target='_blank' rel="noreferrer">
@@ -70,8 +70,8 @@ export default function Show() {
                     src={show.imageSrc}
                     alt={show.imageAlt}
                     width={500}
-                    height={50}
-                    className="object-cover opacity-50 w-full aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    height={500}
+                    className="object-cover opacity-50 w-full h-full aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
                   />
                 </div>
                 <div className="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4 ">
@@ -80,13 +80,13 @@ export default function Show() {
                     className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black opacity-15"
                   >
                     <div className="">
-                      <h1 className="relative uppercase drop-shadow-xl text-secondary text-6xl font-bold font-sans text-white text-center">
+                      <h1 className="relative uppercase drop-shadow-xl text-secondary text-6xl lg:text-3xl font-bold font-sans text-white text-center">
                         {show.name}
                       </h1>
-                      <p className="relative text-4xl text-center font-sans pt-2 text-white text-center hover:text-gray-200">
+                      <p className="relative text-4xl lg:text-2xl lg:pt-0 text-center font-sans pt-2 text-white text-center hover:text-gray-200">
                         {show.location}
                       </p>
-                      <p className="relative text-3xl font-semibold font-sans text-center text-white hover:text-gray-200">
+                      <p className="relative text-3xl lg:text-xl font-semibold font-sans text-center text-white hover:text-gray-200">
                         {show.showDate}
                       </p>
                     </div>

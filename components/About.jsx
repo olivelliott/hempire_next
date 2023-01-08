@@ -49,13 +49,13 @@ const About = () => {
           </div>
           <ul
             role="list"
-            className="mx-auto grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 md:gap-x-6 lg:max-w-5xl lg:gap-x-8 lg:gap-y-12 xl:grid-cols-6"
+            className="mx-auto grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 md:gap-x-6 lg:max-w-5xl lg:gap-x-8 lg:gap-y-3 xl:grid-cols-3"
           >
             {members.map((person) => (
               <li key={person.name}>
                 <div className="space-y-4 pt-2">
                   <Image
-                    className="mx-auto h-34 w-34 rounded-full lg:h-38 lg:w-38 aspect-auto"
+                    className="mx-auto h-34 w-34 rounded-full lg:h-56 lg:w-56 aspect-auto"
                     src={person.imageUrl}
                     alt=""
                     width={500}
@@ -63,8 +63,8 @@ const About = () => {
                   />
                   <div className="space-y-2">
                     <div className="font-medium font-sans lg:text-sm">
-                      <h3 className="text-[2.75rem]">{person.name}</h3>
-                      <p className="text-secondary text-3xl pt-1">{person.role}</p>
+                      <h3 className="text-[2.75rem] lg:text-3xl">{person.name}</h3>
+                      <p className="text-secondary text-3xl lg:text-2xl pt-1">{person.role}</p>
                     </div>
                   </div>
                 </div>

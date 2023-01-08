@@ -19,7 +19,7 @@ const Contact = () => {
           layout='responsive'
         />
 
-        <div className="absolute inset-0 p-4 text-center my-24 lg:my-20">
+        <div className="absolute inset-0 p-4 text-center my-24 lg:my-8">
           <h1 className="text-8xl lg:text-8xl font-sans font-bold text-center p-4 text-white uppercase">
             connect with us
           </h1>
