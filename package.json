@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.7",
+    "@heroicons/react": "^2.0.13",
     "@next/font": "^13.0.3",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "daisyui": "^2.33.0",
