@@ -20,7 +20,7 @@ export default function Home() {
       <Head/>
       <div className='bg-primary'>
       <Hero message='A rock and roll band based out of Boone, NC.' button='Gallery'/>
-      {/* <p className={`${oswald.variable}`}>@hempirerocks</p> */}
+      <iframe style={{ border: 0, width:'400px', height:'406px' }} src="https://bandcamp.com/EmbeddedPlayer/album=3608607350/size=large/bgcol=333333/linkcol=ffffff/artwork=small/transparent=true/" seamless><a href="https://hempirerocks.bandcamp.com/album/high-country-hash-thrash">High Country Hash Thrash by Hempire</a></iframe>
       <Show />
       <Contact />
       <Merch />
