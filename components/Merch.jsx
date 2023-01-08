@@ -116,13 +116,13 @@ const Merch = () => {
     setSelectedProduct(event.target.value);
   };
 
-  console.log(selectedProduct);
+  // console.log(selectedProduct);
 
   const thisProduct = product[selectedProduct];
 
-  console.log(thisProduct);
+  // console.log(thisProduct);
 
-  console.log(product.sizes)
+  // console.log(product.sizes)
 
 
 
