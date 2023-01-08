@@ -12,7 +12,7 @@ import IgImg6 from '../public/assets/social/ig_6.png'
 const Instagram = () => {
   return (
     <div className='max-w-[1240px] mx-auto text-center py-24 mt-8'>
-      <p className='text-2xl font-bold text-secondary uppercase font-sans'>Follow us on instagram</p>
+      <p className='text-6xl font-bold text-secondary uppercase font-sans'>Follow us on instagram</p>
       <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 p-4'>
         <Instagram_Img socialImg={IgImg1}/>
         <Instagram_Img socialImg={IgImg2}/>

@@ -55,12 +55,12 @@ const shows = [
 
 export default function Show() {
   return (
-    <div className="mx-auto mt-6 max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 lg:h-[100vh] lg:grid lg:content-center" id="shows">
+    <div className="mx-auto mt-6 py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 lg:h-[100vh] lg:grid lg:content-center" id="shows">
       <h1 className="text-center text-white font-bold text-8xl lg:text-8xl uppercase font-sans">
         upcoming shows
       </h1>
 
-      <div className="mt-14 grid grid-cols-1 gap-y-12 sm:grid-cols-1 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
+      <div className="mt-14 max-w-3xl mx-auto grid content-center grid-cols-1 gap-y-12 sm:grid-cols-1 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
         {shows.map((show) => (
           <div key={show.id}>
             <a href={show.href} target='_blank' rel="noreferrer">
