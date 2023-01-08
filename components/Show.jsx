@@ -56,11 +56,11 @@ const shows = [
 export default function Show() {
   return (
     <div className="mx-auto mt-6 max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 lg:h-[100vh] lg:grid lg:content-center" id="shows">
-      <h1 className="text-center text-white font-bold text-4xl lg:text-6xl uppercase font-sans">
+      <h1 className="text-center text-white font-bold text-8xl lg:text-8xl uppercase font-sans">
         upcoming shows
       </h1>
 
-      <div className="mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
+      <div className="mt-14 grid grid-cols-1 gap-y-12 sm:grid-cols-1 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
         {shows.map((show) => (
           <div key={show.id}>
             <a href={show.href} target='_blank' rel="noreferrer">
@@ -79,14 +79,14 @@ export default function Show() {
                     aria-hidden="true"
                     className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black opacity-15"
                   >
-                    <div className="mt-7">
-                      <h1 className="relative uppercase drop-shadow-xl text-secondary  pt-3 text-2xl font-bold font-sans text-white text-center">
+                    <div className="">
+                      <h1 className="relative uppercase drop-shadow-xl text-secondary text-6xl font-bold font-sans text-white text-center">
                         {show.name}
                       </h1>
-                      <p className="relative text-md text-center font-sans text-white text-center hover:text-gray-200">
+                      <p className="relative text-4xl text-center font-sans pt-2 text-white text-center hover:text-gray-200">
                         {show.location}
                       </p>
-                      <p className="relative text-sm font-semibold font-sans text-center text-white hover:text-gray-200">
+                      <p className="relative text-3xl font-semibold font-sans text-center text-white hover:text-gray-200">
                         {show.showDate}
                       </p>
                     </div>

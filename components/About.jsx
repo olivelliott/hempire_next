@@ -9,7 +9,7 @@ import Jason from '../public/assets/about/jason_2.png'
 const members = [
   {
     name: "Joey Shaw",
-    role: "Guitarist",
+    role: "Guitarist | Vocalist",
     imageUrl:
       Joey,
     twitterUrl: "#",
@@ -40,10 +40,10 @@ const About = () => {
       <div className="mx-auto max-w-7xl py-12 px-6 text-center lg:px-8 lg:py-24">
         <div className="space-y-8 sm:space-y-12">
           <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
-            <h2 className="lg:text-6xl font-bold text-7xl uppercase font-sans text-white">
+            {/* <h2 className="lg:text-8xl font-bold text-8xl uppercase font-sans text-white">
               the band
-            </h2>
-            <p className="text-4xl text-gray-500">
+            </h2> */}
+            <p className="text-6xl text-white font-sans">
               Meet your high country riff lords from Boone, NC.
             </p>
           </div>
@@ -53,7 +53,7 @@ const About = () => {
           >
             {members.map((person) => (
               <li key={person.name}>
-                <div className="space-y-4">
+                <div className="space-y-4 pt-2">
                   <Image
                     className="mx-auto h-34 w-34 rounded-full lg:h-38 lg:w-38 aspect-auto"
                     src={person.imageUrl}
@@ -63,8 +63,8 @@ const About = () => {
                   />
                   <div className="space-y-2">
                     <div className="font-medium font-sans lg:text-sm">
-                      <h3 className="text-3xl">{person.name}</h3>
-                      <p className="text-secondary text-2xl">{person.role}</p>
+                      <h3 className="text-[2.75rem]">{person.name}</h3>
+                      <p className="text-secondary text-3xl pt-1">{person.role}</p>
                     </div>
                   </div>
                 </div>
