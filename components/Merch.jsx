@@ -129,15 +129,15 @@ const Merch = () => {
   return (
     <div className="bg-primary mt-8" id="merch">
       <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 lg:h-[100vh] lg:grid lg:content-center">
-        <h1 className="font-sans font-bold uppercase text-white text-4xl lg:text-6xl text-center">
+        <h1 className="font-sans font-bold uppercase text-white text-8xl lg:text-8xl text-center">
           merch
         </h1>
 
-        <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 mt-8">
+        <div className="grid gap-y-10 gap-x-6 grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 mt-8 pt-2">
           {product.map((product) => (
             <a key={product.id} href={product.href} className="group">
               <div className="relative">
-                {/* <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg group-hover:opacity-75 bg-gray-200 xl:aspect-w-7 xl:aspect-h-8"> */}
+                <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg group-hover:opacity-75 bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
                 <Image
                   src={product.imageSrc}
                   alt={product.imageAlt}
@@ -145,7 +145,7 @@ const Merch = () => {
                   width={500}
                   height={50}
                 />
-                {/* </div> */}
+                </div>
                 <div className="flex justify-center items-center absolute top-0 left-0 right-0 bottom-0 hover:bg-black/50 group">
                   <div className="hidden group-hover:block">
                     <button
@@ -158,10 +158,10 @@ const Merch = () => {
                   </div>
                 </div>
               </div>
-              <h3 className="mt-4 text-sm text-white font-sans">
+              <h3 className="mt-4 text-5xl text-white font-sans">
                 {product.name}
               </h3>
-              <p className="mt-1 text-lg font-medium text-secondary font-sans">
+              <p className="mt-3 text-4xl font-medium text-secondary font-sans">
                 {product.price}
               </p>
             </a>
