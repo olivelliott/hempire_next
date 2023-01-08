@@ -210,10 +210,12 @@ const Merch = () => {
                       </button>
                       <div className="grid w-full grid-cols-1 items-start gap-y-8 gap-x-6 sm:grid-cols-12 lg:gap-x-8">
                         <div className="aspect-w-2 aspect-h-3 overflow-hidden rounded-lg bg-gray-100 sm:col-span-4 lg:col-span-5">
-                          <img
+                          <Image
                             src={product[selectedProduct].imageSrc}
                             alt={product[selectedProduct].imageAlt}
                             className="object-cover object-center"
+                            width={500}
+                            height={50}
                           />
                         </div>
                         <div className="sm:col-span-8 lg:col-span-7">

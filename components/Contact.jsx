@@ -24,7 +24,7 @@ const Contact = () => {
             connect with us
           </h1>
           <div className="flex justify-around mt-4 pb-4">
-            <a href='https://www.instagram.com/hempirerocks/' target='_blank'>
+            <a href='https://www.instagram.com/hempirerocks/' target='_blank' rel="noreferrer">
               <AiOutlineInstagram
                 size={33}
                 className="relative ease-in duration-300 hover:-translate-y-1 hover:scale-110 text-secondary"
@@ -32,7 +32,7 @@ const Contact = () => {
                 height={35}
               />
             </a>
-            <a href='https://www.facebook.com/hempirerocks/' target='_blank'>
+            <a href='https://www.facebook.com/hempirerocks/' target='_blank' rel="noreferrer">
               <FaFacebookSquare
                 size={31}
                 className="relative ease-in duration-300 hover:-translate-y-1 hover:scale-110 text-secondary"
@@ -40,7 +40,7 @@ const Contact = () => {
                 height={35}
               />
             </a>
-            <a href='https://hempirerocks.bandcamp.com/' target='_blank'>
+            <a href='https://hempirerocks.bandcamp.com/' target='_blank' rel="noreferrer">
               <FaBandcamp
                 size={30}
                 className="relative ease-in duration-300 hover:-translate-y-1 hover:scale-110 text-secondary"

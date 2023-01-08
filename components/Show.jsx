@@ -1,5 +1,7 @@
 import React from "react";
 
+import Image from 'next/image'
+
 const shows = [
   {
     id: 1,
@@ -19,7 +21,7 @@ const shows = [
     time: "8:00pm",
     href: "https://www.facebook.com/monstercadebar",
     imageSrc:
-      "https://bloximages.newyork1.vip.townnews.com/yesweekly.com/content/tncms/assets/v3/editorial/b/59/b59390af-ce48-5ae6-8060-95449db641d8/5e791309b5d80.image.jpg?resize=750%2C500",
+      "",
     imageAlt: "Show Flyer",
     showDate: "1/25",
   },
@@ -41,7 +43,7 @@ const shows = [
     time: "8:00pm",
     href: "https://lilyssnackbar.com/",
     imageSrc:
-      "https://s3-media0.fl.yelpcdn.com/bphoto/KvfTtPdQlPXsfkhRPvJEgw/348s.jpg",
+      "",
     imageAlt: "Show Flyer",
     showDate: "5/17",
   },
@@ -57,12 +59,14 @@ export default function Show() {
       <div className="mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
         {shows.map((show) => (
           <div key={show.id}>
-            <a href={show.href} target='_blank'>
+            <a href={show.href} target='_blank' rel="noreferrer">
               <div className="relative ease-in duration-300 hover:-translate-y-1 hover:scale-101 ">
                 <div className="relative h-72 w-full overflow-hidden rounded-lg">
-                  <img
+                  <Image
                     src={show.imageSrc}
                     alt={show.imageAlt}
+                    width={500}
+                    height={50}
                     className="object-cover opacity-50 w-full aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
                   />
                 </div>
