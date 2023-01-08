@@ -24,7 +24,7 @@ const sizes = [
 
 const product = [
   {
-    id: 1,
+    id: 0,
     name: 'Hand Bleached Shirt',
     href: '#',
     price: '$25',
@@ -47,7 +47,7 @@ const product = [
   ],
   },
   {
-    id: 2,
+    id: 1,
     name: 'Koozie',
     href: '#',
     price: '$10',
@@ -70,7 +70,7 @@ const product = [
   ],
   },
   {
-    id: 3,
+    id: 2,
     name: 'Patch',
     href: '#',
     price: '$7',
@@ -93,7 +93,7 @@ const product = [
   ],
   },
   {
-    id: 4,
+    id: 3,
     name: 'T Shirt',
     href: '#',
     price: '$25',
@@ -137,6 +137,7 @@ const Merch = () => {
       };
 
       console.log(selectedProduct);
+      console.log(product[selectedProduct]);
 
   return (
     <div className="bg-primary mt-8" id='merch'>
@@ -171,7 +172,8 @@ const Merch = () => {
 
 
 {/* QuickView */}
-    <Transition.Root show={isOpen} as={Fragment}>
+{selectedProduct === null ? true :     
+<Transition.Root show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={handleQuickView}>
         <Transition.Child
           as={Fragment}
@@ -206,11 +208,10 @@ const Merch = () => {
                     <span className="sr-only">Close</span>
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </button>
-
                     <div className="grid w-full grid-cols-1 items-start gap-y-8 gap-x-6 sm:grid-cols-12 lg:gap-x-8">
             
                         <div className="aspect-w-2 aspect-h-3 overflow-hidden rounded-lg bg-gray-100 sm:col-span-4 lg:col-span-5">
-                        <img src={product.imageSrc} alt={product.imageAlt} className="object-cover object-center" />
+                        <img src={product[selectedProduct].imageSrc} alt={product.imageAlt} className="object-cover object-center" />
                     </div>
                     <div className="sm:col-span-8 lg:col-span-7">
                     <h2 className="text-2xl font-bold text-gray-900 sm:pr-12">{product.name}</h2>
@@ -304,6 +305,7 @@ const Merch = () => {
         </Dialog>
 
     </Transition.Root>
+ }
     </div>
   )
 }
