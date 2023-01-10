@@ -56,7 +56,7 @@ const shows = [
 export default function Show() {
   return (
     <div className="mx-auto mt-6 py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 lg:h-[100vh] lg:grid lg:content-center" id="shows">
-      <h1 className="text-center text-white font-bold text-8xl lg:text-[8rem] uppercase font-sans">
+      <h1 className="text-center text-white font-bold text-8xl lg:text-8xl uppercase font-sans">
         upcoming shows
       </h1>
 

@@ -1,172 +1,10 @@
-import { Fragment, useState } from "react";
+import { Fragment } from 'react'
 
-import { Dialog, RadioGroup, Transition } from "@headlessui/react";
-import { XMarkIcon } from "@heroicons/react/24/outline";
-import { StarIcon } from "@heroicons/react/20/solid";
-
-import Image from "next/image";
-
-import bShirts from "../public/assets/merch/bleach_shirts.png";
-import koozies from "../public/assets/merch/koozies.png";
-import patches from "../public/assets/merch/patches.png";
-import shirts from "../public/assets/merch/unbleached.png";
-
-const sizes = [
-  { name: "XXS", inStock: true },
-  { name: "XS", inStock: true },
-  { name: "S", inStock: true },
-  { name: "M", inStock: true },
-  { name: "L", inStock: true },
-  { name: "XL", inStock: true },
-  { name: "XXL", inStock: true },
-  { name: "XXXL", inStock: false },
-];
-
-const product = [
-  {
-    id: 0,
-    name: "Hand Bleached Shirt",
-    href: "#",
-    price: "$25",
-    imageSrc: bShirts,
-    imageAlt: "tie dye bleached hempire shirts",
-    colors: [
-      { name: "White", class: "bg-white", selectedClass: "ring-gray-400" },
-      { name: "Gray", class: "bg-gray-200", selectedClass: "ring-gray-400" },
-      { name: "Black", class: "bg-gray-900", selectedClass: "ring-gray-900" },
-    ],
-    sizes: [
-      { name: "XXS", inStock: true },
-      { name: "XS", inStock: true },
-      { name: "S", inStock: true },
-      { name: "M", inStock: true },
-      { name: "L", inStock: true },
-      { name: "XL", inStock: true },
-      { name: "XXL", inStock: true },
-      { name: "XXXL", inStock: false },
-    ],
-  },
-  {
-    id: 1,
-    name: "Koozie",
-    href: "#",
-    price: "$10",
-    imageSrc: koozies,
-    imageAlt: "Orange and black hempire koozies",
-    colors: [
-      { name: "White", class: "bg-white", selectedClass: "ring-gray-400" },
-      { name: "Gray", class: "bg-gray-200", selectedClass: "ring-gray-400" },
-      { name: "Black", class: "bg-gray-900", selectedClass: "ring-gray-900" },
-    ],
-  },
-  {
-    id: 2,
-    name: "Patch",
-    href: "#",
-    price: "$7",
-    imageSrc: patches,
-    imageAlt: "Sew on black and white patches",
-    colors: [
-      { name: "White", class: "bg-white", selectedClass: "ring-gray-400" },
-      { name: "Gray", class: "bg-gray-200", selectedClass: "ring-gray-400" },
-      { name: "Black", class: "bg-gray-900", selectedClass: "ring-gray-900" },
-    ],
-  },
-  {
-    id: 3,
-    name: "T Shirt",
-    href: "#",
-    price: "$25",
-    imageSrc: shirts,
-    imageAlt:
-      "Hand holding black machined steel mechanical pencil with brass tip and top.",
-    colors: [
-      { name: "White", class: "bg-white", selectedClass: "ring-gray-400" },
-      { name: "Gray", class: "bg-gray-200", selectedClass: "ring-gray-400" },
-      { name: "Black", class: "bg-gray-900", selectedClass: "ring-gray-900" },
-    ],
-    sizes: [
-      { name: "XXS", inStock: true },
-      { name: "XS", inStock: true },
-      { name: "S", inStock: true },
-      { name: "M", inStock: true },
-      { name: "L", inStock: true },
-      { name: "XL", inStock: true },
-      { name: "XXL", inStock: true },
-      { name: "XXXL", inStock: false },
-    ],
-  },
-  // More products...
-];
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-
-const Merch = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedColor, setSelectedColor] = useState(product[0].colors[0]);
-  const [selectedSize, setSelectedSize] = useState(product[0].sizes[2]);
-  const [selectedProduct, setSelectedProduct] = useState(null);
-
-  const handleQuickView = (event) => {
-    event.preventDefault();
-    setIsOpen(!isOpen);
-    // console.log(event.target.value);
-    const thisProductId = event.target.value;
-    const thisProduct = product[thisProductId];
-    setSelectedProduct(thisProduct);
-  };
-
+const MerchQuickView = (props) => {
+    const { selectedProduct, isOpen  } = props;
 
   return (
-    <div className="bg-primary mt-8" id="merch">
-      <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 lg:h-[100vh] lg:grid lg:content-center">
-        <h1 className="font-sans font-bold uppercase text-white text-8xl lg:text-8xl text-center">
-          merch
-        </h1>
-
-        <div className="grid gap-y-10 gap-x-6 grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 mt-8 pt-2">
-          {product.map((product) => (
-            <a key={product.id} href={product.href} className="group">
-              <div className="relative">
-                <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg group-hover:opacity-75 bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
-                <Image
-                  src={product.imageSrc}
-                  alt={product.imageAlt}
-                  className="h-full w-full object-cover object-center group-hover:opacity-75"
-                  width={500}
-                  height={50}
-                />
-                </div>
-                <div className="flex justify-center items-center absolute top-0 left-0 right-0 bottom-0 hover:bg-black/50 group">
-                  <div className="hidden group-hover:block">
-                    <button
-                      onClick={handleQuickView}
-                      className="btn btn-md"
-                      value={product.id}
-                    >
-                      Quick View
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <h3 className="mt-4 text-5xl lg:text-2xl text-white font-sans">
-                {product.name}
-              </h3>
-              <p className="mt-3 text-4xl lg:text-xl lg:mt-0 font-medium text-secondary font-sans">
-                {product.price}
-              </p>
-            </a>
-          ))}
-        </div>
-      </div>
-
-      {/* QuickView */}
-      {selectedProduct === null ? (
-        true
-      ) : (
-        <Transition.Root show={isOpen} as={Fragment}>
+    <Transition.Root show={isOpen} as={Fragment}>
           <Dialog as="div" className="relative z-10" onClose={handleQuickView}>
             <Transition.Child
               as={Fragment}
@@ -204,8 +42,8 @@ const Merch = () => {
                       <div className="grid w-full grid-cols-1 items-start gap-y-8 gap-x-6 sm:grid-cols-12 lg:gap-x-8">
                         <div className="aspect-w-2 aspect-h-3 overflow-hidden rounded-lg bg-gray-100 sm:col-span-4 lg:col-span-5">
                           <Image
-                            src={selectedProduct.imageSrc}
-                            alt={selectedProduct.imageAlt}
+                            src={product[selectedProduct].imageSrc}
+                            alt={product[selectedProduct].imageAlt}
                             className="object-cover object-center"
                             width={500}
                             height={50}
@@ -213,7 +51,7 @@ const Merch = () => {
                         </div>
                         <div className="sm:col-span-8 lg:col-span-7">
                           <h2 className="text-2xl font-bold text-gray-900 sm:pr-12">
-                            {selectedProduct.name}
+                            {product[selectedProduct].name}
                           </h2>
 
                           <section
@@ -221,11 +59,11 @@ const Merch = () => {
                             className="mt-2"
                           >
                             <h3 id="information-heading" className="sr-only">
-                              selectedProduct information
+                              Product information
                             </h3>
 
                             <p className="text-2xl text-gray-900">
-                              {selectedProduct.price}
+                              {product[selectedProduct].price}
                             </p>
 
                             <form>
@@ -239,7 +77,7 @@ const Merch = () => {
                               </a>
                             </div>
  */}
-                                     {/* <p>{selectedProduct}.sizes[0].name</p> */}
+                                     {/* <p>{product[selectedProduct]}.sizes[0].name</p> */}
 
                                 <RadioGroup
                                   value={selectedSize}
@@ -332,9 +170,7 @@ const Merch = () => {
             </div>
           </Dialog>
         </Transition.Root>
-      )}
-    </div>
-  );
-};
+  )
+}
 
-export default Merch;
+export default MerchQuickView;

@@ -43,7 +43,7 @@ const About = () => {
             {/* <h2 className="lg:text-8xl font-bold text-8xl uppercase font-sans text-white">
               the band
             </h2> */}
-            <p className="text-6xl text-white font-sans">
+            <p className="text-6xl lg:text-5xl text-white font-sans">
               Meet your high country riff lords from Boone, NC.
             </p>
           </div>
