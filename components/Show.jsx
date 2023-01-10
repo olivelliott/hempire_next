@@ -80,13 +80,13 @@ export default function Show() {
                     className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black opacity-15"
                   >
                     <div className="">
-                      <h1 className="relative uppercase drop-shadow-xl text-secondary text-6xl lg:text-3xl font-bold font-sans text-white text-center">
+                      <h1 className="relative uppercase drop-shadow-xl text-secondary text-6xl md:text-4xl lg:text-3xl font-bold font-sans text-white text-center">
                         {show.name}
                       </h1>
-                      <p className="relative text-4xl lg:text-2xl lg:pt-0 text-center font-sans pt-2 text-white text-center hover:text-gray-200">
+                      <p className="relative text-4xl md:text-3xl md:pt-0 lg:text-2xl lg:pt-0 text-center font-sans pt-2 text-white text-center hover:text-gray-200">
                         {show.location}
                       </p>
-                      <p className="relative text-3xl lg:text-xl font-semibold font-sans text-center text-white hover:text-gray-200">
+                      <p className="relative text-3xl md:text-2xl lg:text-xl font-semibold font-sans text-center text-white hover:text-gray-200">
                         {show.showDate}
                       </p>
                     </div>

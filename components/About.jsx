@@ -43,7 +43,7 @@ const About = () => {
             {/* <h2 className="lg:text-8xl font-bold text-8xl uppercase font-sans text-white">
               the band
             </h2> */}
-            <p className="text-6xl lg:text-5xl text-white font-sans">
+            <p className="text-6xl md:text-5xl lg:text-5xl text-white font-sans">
               Meet your high country riff lords from Boone, NC.
             </p>
           </div>
@@ -63,8 +63,8 @@ const About = () => {
                   />
                   <div className="space-y-2">
                     <div className="font-medium font-sans lg:text-sm">
-                      <h3 className="text-[2.75rem] lg:text-3xl">{person.name}</h3>
-                      <p className="text-secondary text-3xl lg:text-2xl pt-1">{person.role}</p>
+                      <h3 className="text-[2.75rem] md:text-3xl lg:text-3xl">{person.name}</h3>
+                      <p className="text-secondary text-3xl md:text-2xl lg:text-2xl pt-1">{person.role}</p>
                     </div>
                   </div>
                 </div>
