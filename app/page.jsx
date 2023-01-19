@@ -11,6 +11,8 @@ import Show from "../components/Show";
 import Contact from "../components/Contact";
 import Merch from "../components/Merch";
 import Instagram from "../components/Instagram";
+import Slider from '../components/Slider';
+import SliderData from '../components/SliderData'
 
 export default function Home() {
   return (
@@ -25,7 +27,7 @@ export default function Home() {
         <Show />
         <Contact />
         <Merch />
-        <Instagram />
+        {/* <Instagram /> */}
         {/* <Slider slides={SliderData} /> */}
       </div>
     </div>

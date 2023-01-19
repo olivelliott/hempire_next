@@ -52,7 +52,7 @@ const Merch = ({ products }) => {
             {product.map((product) => (
               <a key={product.id} href={product.href} className="group">
                 <div className="relative">
-                  <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg sm:aspect-w-2 sm:aspect-h-3 group-hover:opacity-75 bg-gray-200">
+                  <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg sm:aspect-w-2 sm:aspect-h-2 group-hover:opacity-75 bg-gray-200">
                     <Image
                       src={product.imageSrc}
                       alt={product.imageAlt}
