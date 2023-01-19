@@ -43,7 +43,7 @@ const About = () => {
             {/* <h2 className="lg:text-8xl font-bold text-8xl uppercase font-sans text-white">
               the band
             </h2> */}
-            <p className="text-6xl md:text-5xl lg:text-5xl text-white font-sans">
+            <p className="text-6xl text-white font-sans">
               Meet your high country riff lords from Boone, NC.
             </p>
           </div>
@@ -72,7 +72,7 @@ const About = () => {
             ))}
           </ul>
           <div className="flex justify-center">
-            <div className='visible lg:invisible mt-4'>
+            <div className='visible lg:invisible ml-96 mt-4'>
                 <iframe
                 style={{ border: 0, width: "400px", height: "400px" }}
                 src="https://bandcamp.com/EmbeddedPlayer/album=3608607350/size=large/bgcol=333333/linkcol=ffffff/minimal=true/transparent=true/"
@@ -83,7 +83,7 @@ const About = () => {
                 </a>
                 </iframe>
             </div>
-            <div className='invisible lg:visible mt-4'>
+            <div className='invisible lg:visible lg:mr-96 mt-4'>
               <iframe
                 style={{ border: 0, width: "400px", height: "406px" }}
                 src="https://bandcamp.com/EmbeddedPlayer/album=3608607350/size=large/bgcol=333333/linkcol=ffffff/artwork=small/transparent=true/"

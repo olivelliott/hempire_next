@@ -28,33 +28,17 @@ function classNames(...classes) {
 
 const Merch = ({ products }) => {
   const [isOpen, setIsOpen] = useState(false);
-  // const [selectedColor, setSelectedColor] = useState(product[0].colors[0]);
   const [selectedSize, setSelectedSize] = useState(product[0].sizes[2]);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   const handleQuickView = (event) => {
     event.preventDefault();
     setIsOpen(!isOpen);
-    // console.log(event.target.value);
     const thisProductId = event.target.value;
     const thisProduct = product[thisProductId];
     setSelectedProduct(thisProduct);
   };
 
-  // fetch(getAllProducts)
-  //   // .then((response) => response.json())
-  //   .then((response) => {
-  //     // console.log(response);
-  //     const products = response;
-  //     console.log(products)
-  //     return { props: products }
-  //   });
-
-  // getAllProducts()
-  //   .then((response) => {
-  //     console.log(response);
-  //   })  // const productTest = getAllProducts();
-  // console.log(productTest);
 
   return (
     <div className="bg-primary mt-8" id="merch">
@@ -62,7 +46,8 @@ const Merch = ({ products }) => {
         <h1 className="font-sans font-bold uppercase text-white text-8xl lg:text-8xl text-center">
           merch
         </h1>
-
+        <h2 className="font-sans mt-4 font-bold uppercase text-white text-xl text-center">contact @hempirerocks for purchase inquiries</h2>
+        <p className="font-sans mt-4 font-bold uppercase text-white text-xl text-center">on site paypal purchase <span className='text-secondary'>tba</span></p>
           <div className="grid gap-y-10 gap-x-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 mt-8 pt-2">
             {product.map((product) => (
               <a key={product.id} href={product.href} className="group">
@@ -253,12 +238,12 @@ const Merch = ({ products }) => {
                                   </RadioGroup>
                                 </div>
 
-                                <button
+                                {/* <button
                                   type="submit"
                                   className="mt-6 flex w-full items-center justify-center rounded-md border border-transparent bg-secondary py-3 px-8 text-base font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
                                 >
                                   Add to bag
-                                </button>
+                                </button> */}
                               </form>
                             </section>
                           </div>
