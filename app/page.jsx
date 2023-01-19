@@ -27,7 +27,7 @@ export default function Home() {
         <Show />
         <Contact />
         <Merch />
-        {/* <Instagram /> */}
+        <Instagram />
         {/* <Slider slides={SliderData} /> */}
       </div>
     </div>

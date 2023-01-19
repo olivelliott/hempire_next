@@ -41,7 +41,7 @@ const Navbar = () => {
           {/* <GiGrimReaper size={30}  /> */}
           {/* <Image src={IconLogo} alt='hempire icon' width={50} height={5}/> */}
         </Link>
-        <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
+        <ul style={{ color: `${textColor}` }} className="hidden md:flex text-lg">
           <li className="p-4 font-sans">
             <a href="#home">Home</a>
           </li>
@@ -57,7 +57,7 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile Button */}
-        <div onClick={handleNav} className="block sm:hidden z-10">
+        <div onClick={handleNav} className="block md:hidden z-10">
           {nav ? (
             <AiOutlineClose size={20} className='white' />
           ) : (

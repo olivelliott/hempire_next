@@ -20,7 +20,7 @@ const Contact = () => {
         />
 
         <div className="absolute inset-0 p-4 text-center my-18 md:my-12 lg:my-8">
-          <h1 className="text-6xl md:text-6xl lg:text-8xl font-sans font-bold text-center p-4 text-white uppercase">
+          <h1 className="text-7xl lg:text-8xl font-sans font-bold text-center p-4 text-white uppercase">
             connect with us
           </h1>
           <div className="flex justify-around mt-4 pb-4">
@@ -47,10 +47,10 @@ const Contact = () => {
               />
             </a>
           </div>
-          <p className="text-4xl md:text-3xl lg:text-3xl mt-4 font-bold uppercase text-white font-sans">or</p>
+          <p className="text-4xl md:text-4xl lg:text-3xl mt-4 font-bold uppercase text-white font-sans">or</p>
           <a
             href="mailto:jkshaw13@gmail.com"
-            className=" font-sans btn btn-md border-none relative ease-in duration-300 mt-6 text-xl md:text-xl rounded bg-neutral active:bg-gray-800 text-white text-center active:text-gray-200"
+            className=" font-sans btn btn-lg lg:btn-md border-none text-2xl md:text-2xl relative ease-in duration-300 mt-6 rounded bg-neutral active:bg-gray-800 text-white text-center active:text-gray-200"
           >
             send an email
           </a>

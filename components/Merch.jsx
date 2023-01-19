@@ -42,12 +42,12 @@ const Merch = ({ products }) => {
 
   return (
     <div className="bg-primary mt-8" id="merch">
-      <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 md:h-[100vh] lg:grid lg:content-center">
+      <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 max-h-[100vh] lg:grid lg:content-center">
         <h1 className="font-sans font-bold uppercase text-white text-8xl lg:text-8xl text-center">
           merch
         </h1>
-        <h2 className="font-sans mt-4 font-bold uppercase text-white text-xl text-center">contact @hempirerocks for purchase inquiries</h2>
-        <p className="font-sans mt-4 font-bold uppercase text-white text-xl text-center">on site paypal purchase <span className='text-secondary'>tba</span></p>
+        <h2 className="font-sans mt-4 font-bold uppercase text-white text-2xl text-center">contact @hempirerocks for purchase inquiries</h2>
+        <p className="font-sans mt-4 font-bold uppercase text-white text-2xl text-center">on site paypal purchase <span className='text-secondary'>tba</span></p>
           <div className="grid gap-y-10 gap-x-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 mt-8 pt-2">
             {product.map((product) => (
               <a key={product.id} href={product.href} className="group">

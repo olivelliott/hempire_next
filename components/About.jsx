@@ -71,10 +71,10 @@ const About = () => {
               </li>
             ))}
           </ul>
-          <div className="flex justify-center">
-            <div className='visible lg:invisible ml-96 mt-4'>
+          <div className="flex">
+            <div className='visible lg:invisible mt-4 '>
                 <iframe
-                style={{ border: 0, width: "400px", height: "400px" }}
+                style={{ border: 0, width: "500px", height: "500px" }}
                 src="https://bandcamp.com/EmbeddedPlayer/album=3608607350/size=large/bgcol=333333/linkcol=ffffff/minimal=true/transparent=true/"
                 seamless
                 >
@@ -83,7 +83,7 @@ const About = () => {
                 </a>
                 </iframe>
             </div>
-            <div className='invisible lg:visible lg:mr-96 mt-4'>
+            <div className='invisible lg:visible mt-4 '>
               <iframe
                 style={{ border: 0, width: "400px", height: "406px" }}
                 src="https://bandcamp.com/EmbeddedPlayer/album=3608607350/size=large/bgcol=333333/linkcol=ffffff/artwork=small/transparent=true/"
