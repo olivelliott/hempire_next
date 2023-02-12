@@ -2,7 +2,7 @@ import "./globals.css";
 import Navbar from '../components/Navbar'
 import Head from './head'
 import Footer from '../components/Footer'
-
+import { AnalyticsWrapper } from './components/analytics';
 import { Oswald, Birthstone } from '@next/font/google';
 
 // If loading a variable font, you don't need to specify the font weight
@@ -28,7 +28,10 @@ export default function RootLayout({ children }) {
         <header>
           <Navbar />
         </header>
-        <body>{children}</body>
+        <body>
+          {children}
+          <AnalyticsWrapper />
+        </body>
       <footer>
         <Footer/>
       </footer>
